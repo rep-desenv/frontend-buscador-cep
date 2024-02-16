@@ -1,0 +1,139 @@
+/*  
+    Para centralizar os elementos da row, utilizei flexbox, 
+    o align-items: center, centraliza na vertical 
+    e o justify-content: center, centraliza na horizontal. 
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;     
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}   
+
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 200px; 
+    height: 450;
+    transition: all 0.3s ease-out;   
+}
+
+.blue {
+    border-left: 5px solid #4895ff;
+  }
+
+  .green {
+    border-left: 5px solid #3bb54a;
+  }
+   
+  .red {
+    border-left: 5px solid #b3404a;
+  }
+
+  .yellow {
+    border-left: 5px solid #f2ff38;
+  }
+
+  .cardButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px; 
+    border: 0;   
+    cursor: pointer;
+    background: none;
+  }
+
+  .cardButton:hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+  }
+
+
+  .cardButtonHold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px; 
+    border: 0;   
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-name: slidein;
+    background: none;
+  }
+
+  .cardButtonHold:hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+  }
+
+  @keyframes flipTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 30%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 30%;
+    }
+  }
+
+  .cardLoader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .cardFileName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .cardStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+
+  .cardDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;    
+  }
+
+  .cardDetail p {
+    padding: 10px;
+  }
