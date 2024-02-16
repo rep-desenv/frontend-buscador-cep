@@ -15,18 +15,18 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    
-    
 }   
 
 .card {
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-    padding: 30px;
+    padding: 60px;
     margin: 20px;
     width: 200px; 
     height: 450;
-    transition: all 0.3s ease-out;   
+    transition: all 0.3s ease-out;  
+    align-items: center;
+    justify-content: center; 
 }
 
 .blue {
@@ -43,6 +43,10 @@ body {
 
   .yellow {
     border-left: 5px solid #f2ff38;
+  }
+
+  .white {
+    border-left: 5px solid #ffffff;
   }
 
   .cardButton {
@@ -136,4 +140,23 @@ body {
 
   .cardDetail p {
     padding: 10px;
+  }
+
+
+  .cardCheck{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 0.1px;
+    justify-content: right;
+    font-size: 20px;
+  }
+  
+  .cardCheck input {
+    margin: 0.6rem;
+  }
+
+  .cardCheck p,label {
+    font:
+      1.5rem 'Fira Sans',
+      sans-serif;
   }
