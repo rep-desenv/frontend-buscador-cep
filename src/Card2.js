@@ -7,7 +7,8 @@ import { useEffect, useState } from "react";
 import Card from './componentes/Card'
 import axios from "axios";
 import { CheckBox } from '@mui/icons-material';
-const baseUrl = "https://jsonplaceholder.typicode.com/posts";
+//const baseUrl = "https://jsonplaceholder.typicode.com/posts";
+//const baseUrl = "https://localhost:3001/testsprocess";
 
 function Cards2(){
 
@@ -142,7 +143,7 @@ function Cards2(){
         }
     ]
    
-    //var jsonDados = [{}]
+    var jsonDados = [{}]
     
     const [dados, setDados] = useState(jsonDados);
     // const [isChecked, setIsChecked] = useState(1)
@@ -159,9 +160,9 @@ function Cards2(){
 
     useEffect(()=>{
         const fetchData = async() => {
-            // axios.get(`${baseUrl}/`).then(({ data }) => setDados(data));
+            apiReport.get('/testsprocess').then(({ data }) => setDados(data));
             console.log('Executado', dados)
-            setDados(jsonDados)
+            //setDados(jsonDados)
         }
 
         fetchData()      
